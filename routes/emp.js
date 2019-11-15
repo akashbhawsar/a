@@ -111,6 +111,7 @@ emprouter.get("/", function(request, response){
            myData =  result;
            response.contentType("application/json");
            response.send(JSON.stringify(myData));
+           response.send("welcome home");
         }
         else
         {
