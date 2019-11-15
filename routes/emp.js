@@ -107,7 +107,7 @@ emprouter.delete("/:No",function(request, response){
 emprouter.get("/", function(request, response){
     connection.query("select * from emp", function(err, result){
         if(err==null)
-        {
+        {console.log("akash");
            myData =  result;
            response.contentType("application/json");
            response.send(JSON.stringify(myData));
